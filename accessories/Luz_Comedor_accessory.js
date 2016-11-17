@@ -190,7 +190,7 @@ light
     	});
       }
     }else{
-      console.log("... La luz aun no está disponible o está desconectada!!");
+      console.log("Avea is not available yet or disconnected");
       callback(new Error("Device not Ready"));
     }
 
