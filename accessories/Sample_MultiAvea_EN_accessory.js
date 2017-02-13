@@ -285,7 +285,11 @@ noble.on("discover", function(peripheral) {
 
 noble.on('scanStop', function(callback) {
     console.log(optilog() + "scanStop received");
-    scanning = false;
+    if(perifSel == null){
+      noble.startScanning(serviceUUID, false);
+    }else{
+      scanning = false;
+    }
 });
 
 noble.on('scanStart', function(callback) {
