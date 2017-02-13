@@ -13,6 +13,6 @@ de la carpeta node_modules y copia el archivo del accesorio en el directorio HAP
 
 #### Nota: 
 
->  El archivo "Sample_1Avea_EN_accessory.js" es para usuarios que tengan tan solo una luz avea, y no precisa de ninguna configuración extra. tan solo copiar y pegar. (El sufijo ES o EN indica el idioma de la versión empleada, y el idioma de los comentarios almacenados en los archivos de log).
+>  El archivo <a href="https://github.com/Alblahm/avea_node/blob/master/accessories/Sample_1Avea_ES_accessory.js"> "Sample_1Avea_ES_accessory.js"</a> es para usuarios que tengan tan solo una luz avea, y no precisa de ninguna configuración extra, tan solo copiar y pegar. (El sufijo ES o EN indica el idioma de la versión empleada, y el idioma de los comentarios almacenados en los archivos de log).
 
->  El archivo "Sample_MultiAvea_EN_accessory.js" es la versión en inglés para los usuarios que tengan más de una luz avea conectada al mismo sistema. Tras copiar y pegar el archivo es necesario editarlo y reemplazar la dirección MAC de cada una de las luces añadidas. Es preciso emplear un archivo por cada luz poniéndole nombres diferentes, recuerda que los nombres siempre deben terminar con el sufijo y la extensión "_accessory.js".
+>  El archivo <a href="https://github.com/Alblahm/avea_node/blob/master/accessories/Sample_1Avea_EN_accessory.js"> "Sample_MultiAvea_EN_accessory.js"</a> es la versión en inglés para los usuarios que tengan más de una luz avea conectada al mismo sistema. Tras copiar y pegar el archivo es necesario editarlo y reemplazar la dirección MAC de cada una de las luces añadidas. Es preciso emplear un archivo por cada luz poniéndole nombres diferentes, recuerda que los nombres siempre deben terminar con el sufijo y la extensión "_accessory.js".
