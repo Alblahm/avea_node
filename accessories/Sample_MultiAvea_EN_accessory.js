@@ -9,6 +9,8 @@ var colorS = require("onecolor");
 var bulb = null;
 var perifSel = null;
 var scanning = false;
+var noOfSeqScans = 0;
+const maxNoOfSeqScans = 5;
 
 var serviceUUID = ["f815e810456c6761746f4d756e696368"];
 
@@ -285,7 +287,7 @@ noble.on("discover", function(peripheral) {
 
 noble.on('scanStop', function(callback) {
     console.log(optilog() + "scanStop received");
-    if(perifSel == null){
+    if(perifSel == null && maxNoOfSeqScans > noOfSeqScans++){
       noble.startScanning(serviceUUID, false);
     }else{
       scanning = false;
