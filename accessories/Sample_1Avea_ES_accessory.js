@@ -293,7 +293,7 @@ noble.on("discover", function(peripheral) {
   // La primera vez se conecta al dispositivo identificado y se crea una nueva luz Avea... 
   if(perifSel==null){
      //console.log(peripheral.uuid + " / " + uuidMyLamp);
-     if((peripheral.uuid==uuidMyLamp)||(uuidMyLamp==null)){
+     if((uuidMyLamp==null)||(peripheral.uuid==uuidMyLamp.toLowerCase())){	     
 	perifSel=peripheral;
 	//console.log("... Dispositivo identificado");
         //console.log("... (Init) Perif: " + perifSel.state);
