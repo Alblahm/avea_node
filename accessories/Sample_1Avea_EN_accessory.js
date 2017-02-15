@@ -20,7 +20,10 @@ const uuidMyLamp = null;
 // Example Created by Alblahm, Nov 20th.
 // Thank's to Marmelatze for the base code.
 // https://github.com/Marmelatze/avea_node
+// Updated Version:
+// https://github.com/Alblahm/avea_node
 // Changelog:
+// Upper case UUID problem solved
 // Color correspondence between ios and avea_light updated.
 // Real time change of brightness while sliding the brightness control in ios Home app
 //
@@ -295,7 +298,7 @@ noble.on("discover", function(peripheral) {
   // La primera vez se conecta al dispositivo identificado y se crea una nueva luz Avea... 
   if(perifSel==null){
      //console.log(peripheral.uuid + " / " + uuidMyLamp);
-     if((peripheral.uuid==uuidMyLamp)||(uuidMyLamp==null)){
+     if((uuidMyLamp==null)||(peripheral.uuid==uuidMyLamp.toLowerCase())){
 	perifSel=peripheral;
 	//console.log("... Dispositivo identificado");
         //console.log("... (Init) Perif: " + perifSel.state);
