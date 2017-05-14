@@ -9,8 +9,8 @@ var colorS = require("onecolor");
 var bulb = null;
 var perifSel = null;
 // This var is only to show into the log comments ...
-const txtIdLamp="the dinning lamp";
-const txtSiriName="dinning lamp";
+const txtIdLamp="Todesstern";
+const txtSiriName="Todesstern";
 
 // Set this value to null if you only have one lamp ...  
 const uuidMyLamp = null;
